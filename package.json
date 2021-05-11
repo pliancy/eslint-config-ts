@@ -1,6 +1,6 @@
 {
   "name": "@pliancy/eslint-config-ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Base eslint config for all TypeScript projects",
   "main": "index.js",
   "private": false,
