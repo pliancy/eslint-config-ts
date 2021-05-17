@@ -3,6 +3,7 @@ module.exports = {
     parserOptions: {
         sourceType: 'module',
     },
+    ignorePatterns: ['dist/', 'tmp/', 'coverage/', 'assets/', '.github/'],
     plugins: ['@typescript-eslint/eslint-plugin', 'unused-imports', 'prettier'],
     extends: ['prettier'],
     root: true,
@@ -25,21 +26,7 @@ module.exports = {
                 trailingComma: 'all',
                 semi: false,
                 printWidth: 100,
-                tabWidth: 4,
-                overrides: [
-                    {
-                        files: [
-                            '**/*.json',
-                            '**/*.yml',
-                            '*rc',
-                            '*ignore',
-                            '*config'
-                        ],
-                        options: {
-                            tabWidth: 2
-                        }
-                    }
-                ]
+                tabWidth: 4
             }
         ]
     },
